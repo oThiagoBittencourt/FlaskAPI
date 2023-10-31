@@ -13,3 +13,17 @@ A aplicação se trata do desenvolvimento de um CRUD básico, em Python, de uma 
 - Flask
 - SQLAlchemy
 - SQLite
+
+### Modelo:
+Livro
+- Id
+- Titulo
+- Autor
+- Editora
+- Valor
+
+### Funções:
+- inserir
+- recuperar (todos e por id)
+- atualizar
+- deletar
