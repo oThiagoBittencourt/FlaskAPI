@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+    
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+    
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+    
+        .topnav a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+    <h1>Atualizar: {{ livro.titulo }}</h1>
+    <form method="POST">
+        <label for="titulo">Título:</label>
+        <input type="text" name="titulo" value="{{ livro.titulo }}"><br>
+        <label for="autor">Autor:</label>
+        <input type="text" name="autor" value="{{ livro.autor }}"><br>
+        <label for="editora">Título:</label>
+        <input type="text" name="editora" value="{{ livro.editora }}"><br>
+        <label for="valor">Valor:</label>
+        <input type="number" name="valor" value="{{ livro.valor }}"><br>
+        <input type="submit" value="Atualizar">
+    </form>
+</body>
+</html>
